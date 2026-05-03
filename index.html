@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#1E3A5F" />
+  <meta name="description" content="JCK Acabados & Pintura — Servicio profesional de pintado en Lima. Casas, departamentos, fachadas y locales comerciales. Cotización gratis por WhatsApp." />
+  <meta name="keywords" content="pintura Lima, pintor profesional, pintado de casas, fachadas, departamentos, JCK Acabados & Pintura" />
+  <meta name="author" content="JCK Acabados & Pintura" />
+
+  <meta property="og:title" content="JCK Acabados & Pintura — Pintado Profesional en Lima" />
+  <meta property="og:description" content="Transformamos tus espacios con acabados de calidad garantizada. Cotiza gratis por WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_PE" />
+
+  <title>JCK Acabados & Pintura — Pintado Profesional en Lima | Cotización Gratis</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="header__logo" aria-label="JCK Acabados & Pintura — Inicio">
+        <span class="header__logo-mark">JCK</span>
+        <span class="header__logo-text">Acabados &amp; Pintura</span>
+      </a>
+
+      <nav class="header__nav" id="nav" aria-label="Principal">
+        <a href="#beneficios">¿Por qué JCK?</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#cotizar" class="btn btn--primary header__nav-cta">Cotizar gratis</a>
+      </nav>
+
+      <button class="header__burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== MOBILE MENU DRAWER ===== -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__backdrop" data-close></div>
+
+    <aside class="mobile-menu__panel" role="dialog" aria-modal="true" aria-label="Menú principal">
+      <div class="mobile-menu__head">
+        <a href="#inicio" class="mobile-menu__logo" data-close>
+          <span class="header__logo-mark">JCK</span>
+          <span class="header__logo-text">Acabados &amp; Pintura</span>
+        </a>
+        <button class="mobile-menu__close" data-close aria-label="Cerrar menú">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <nav class="mobile-menu__nav" aria-label="Móvil">
+        <a href="#inicio" data-close>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11.5L12 4l9 7.5"/><path d="M5 10v10h14V10"/></svg>
+          <span>Inicio</span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg>
+        </a>
+        <a href="#beneficios" data-close>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.5 9.7 8 11 4.5-1.3 8-6 8-11V5l-8-3z"/></svg>
+          <span>¿Por qué JCK?</span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg>
+        </a>
+        <a href="#servicios" data-close>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 1 1-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 1 5.4-5.4l-2.5 2.5L14 14l2.2.8L18.7 12c.4-1.1.5-2.3.2-3.5"/></svg>
+          <span>Servicios</span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg>
+        </a>
+        <a href="#proyectos" data-close>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Proyectos</span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg>
+        </a>
+        <a href="#proceso" data-close>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          <span>Proceso</span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg>
+        </a>
+        <a href="#faq" data-close>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12" y2="17"/></svg>
+          <span>Preguntas</span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg>
+        </a>
+      </nav>
+
+      <a href="#cotizar" class="mobile-menu__cta btn btn--primary btn--lg btn--block" data-close>
+        <svg class="icon-whatsapp" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.123 1.532 5.855L.054 23.203a.75.75 0 0 0 .916.916l5.348-1.478A11.955 11.955 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.956 0-3.792-.535-5.364-1.463l-.385-.228-3.992 1.102 1.103-3.992-.229-.385A9.956 9.956 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Cotizar gratis
+      </a>
+
+      <div class="mobile-menu__contact">
+        <p class="mobile-menu__contact-title">¿Necesitas ayuda?</p>
+        <a href="tel:+51966799756" data-close>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +51 966 799 756
+        </a>
+        <a href="mailto:santiago_jck@hotmail.com" data-close>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg>
+          santiago_jck@hotmail.com
+        </a>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <span class="hero__badge">
+          <span class="dot"></span> Atendiendo Lima Metropolitana
+        </span>
+        <h1 class="hero__title">
+          Pintado <span class="text-accent">profesional</span> en Lima que <span class="text-accent">transforma</span> tus espacios
+        </h1>
+        <p class="hero__subtitle">
+          Casas, departamentos, fachadas y locales comerciales. Solo pintado profesional,
+          con asesoría para que el cliente compre los materiales correctos.
+        </p>
+
+        <div class="hero__ctas">
+          <a href="https://wa.me/51966799756?text=Hola%20JCK%20Acabados%20%26%20Pintura%2C%20quisiera%20solicitar%20una%20cotización" class="btn btn--primary btn--lg" target="_blank" rel="noopener">
+            <svg class="icon-whatsapp" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.123 1.532 5.855L.054 23.203a.75.75 0 0 0 .916.916l5.348-1.478A11.955 11.955 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.956 0-3.792-.535-5.364-1.463l-.385-.228-3.992 1.102 1.103-3.992-.229-.385A9.956 9.956 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            Cotizar por WhatsApp
+          </a>
+          <a href="#proyectos" class="btn btn--ghost btn--lg">Ver proyectos</a>
+        </div>
+
+        <ul class="hero__trust" aria-label="Garantías">
+          <li><strong>+5</strong><span>años de experiencia</span></li>
+          <li><strong>+100</strong><span>proyectos entregados</span></li>
+          <li><strong>100%</strong><span>garantía escrita</span></li>
+        </ul>
+      </div>
+
+      <div class="hero__media">
+        <div class="hero__card">
+          <video autoplay loop muted playsinline preload="metadata" poster="imagnees/fachada%20despues%20v1.jpeg">
+            <source src="imagnees/interior%20departameneto%20despues%20video%20v1.mp4" type="video/mp4" />
+          </video>
+          <div class="hero__card-tag">
+            <span class="hero__card-dot"></span> Trabajo reciente · Lima
+          </div>
+        </div>
+        <div class="hero__card hero__card--small">
+          <img src="imagnees/fachada%20despues%20v1.jpeg" alt="Resultado de proyecto JCK Acabados & Pintura" loading="lazy" />
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z"/></svg>
+    </div>
+  </section>
+
+  <!-- ===== BENEFICIOS ===== -->
+  <section class="section section--alt" id="beneficios">
+    <div class="container">
+      <header class="section-header reveal">
+        <span class="section-label">¿Por qué JCK Acabados & Pintura?</span>
+        <h2>La diferencia que se nota en cada pared</h2>
+        <p>Más que pintura: profesionalismo, puntualidad y un acabado que dura.</p>
+      </header>
+
+      <div class="beneficios__grid">
+        <article class="beneficio reveal">
+          <div class="beneficio__icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>
+          <h3>Profesionalismo</h3>
+          <p>Equipo capacitado con años de experiencia.</p>
+        </article>
+
+        <article class="beneficio reveal">
+          <div class="beneficio__icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 4 5v6c0 5 3.5 9.7 8 11 4.5-1.3 8-6 8-11V5l-8-3zm-1 15-4-4 1.4-1.4L11 14.2l5.6-5.6L18 10l-7 7z"/></svg></div>
+          <h3>Asesoría en Materiales</h3>
+          <p>Te orientamos en marcas y cantidades; el cliente compra los materiales.</p>
+        </article>
+
+        <article class="beneficio reveal">
+          <div class="beneficio__icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.2 14.2L11 13V7h1.5v5.2l4.5 2.7-.8 1.3z"/></svg></div>
+          <h3>Cumplimos Plazos</h3>
+          <p>Respetamos las fechas acordadas.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROYECTOS / ANTES Y DESPUÉS ===== -->
+  <section class="section section--alt proyectos" id="proyectos">
+    <div class="container">
+      <header class="section-header reveal">
+        <span class="section-label">Galería de Proyectos</span>
+        <h2>El antes y después de nuestros trabajos</h2>
+        <p><strong>Arrastra el divisor</strong> para descubrir la transformación</p>
+      </header>
+
+      <div class="proyectos__grid">
+
+        <!-- Proyecto 1: imagen + imagen -->
+        <article class="proyecto reveal">
+          <div class="before-after" data-slider>
+            <div class="before-after__before">
+              <img src="imagnees/fachada%20antes%20v1.jpeg" alt="Pared antes del trabajo de JCK Acabados & Pintura" loading="lazy" />
+              <span class="label label--before">Antes</span>
+            </div>
+            <div class="before-after__after">
+              <img src="imagnees/fachada%20despues%20v1.jpeg" alt="Pared después del trabajo de JCK Acabados & Pintura" loading="lazy" />
+              <span class="label label--after">Después</span>
+            </div>
+            <div class="before-after__divider" aria-hidden="true">
+              <div class="before-after__handle">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M8 5l-5 7 5 7M16 5l5 7-5 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="proyecto__info">
+            <h3>Renovación Exterior</h3>
+            <p class="proyecto__loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Lima · Residencial</p>
+          </div>
+        </article>
+
+        <!-- Proyecto 2: video + video -->
+        <article class="proyecto reveal">
+          <div class="before-after" data-slider>
+            <div class="before-after__before">
+              <video autoplay loop muted playsinline preload="metadata">
+                <source src="imagnees/interior%20departameneto%20antes%20video%20v1.mp4" type="video/mp4" />
+              </video>
+              <span class="label label--before">Antes</span>
+            </div>
+            <div class="before-after__after">
+              <video autoplay loop muted playsinline preload="metadata">
+                <source src="imagnees/interior%20departameneto%20despues%20video%20v1.mp4" type="video/mp4" />
+              </video>
+              <span class="label label--after">Después</span>
+            </div>
+            <div class="before-after__divider" aria-hidden="true">
+              <div class="before-after__handle">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M8 5l-5 7 5 7M16 5l5 7-5 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+            <span class="badge-video" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg>Video</span>
+          </div>
+          <div class="proyecto__info">
+            <h3>Transformación de departamento</h3>
+            <p class="proyecto__loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Lima · Pintado completo</p>
+          </div>
+        </article>
+
+        <!-- Proyecto 3: video + video -->
+        <article class="proyecto reveal">
+          <div class="before-after" data-slider>
+            <div class="before-after__before">
+              <video autoplay loop muted playsinline preload="metadata">
+                <source src="imagnees/interior%20departameneto%20antes%20video%20v2.mp4" type="video/mp4" />
+              </video>
+              <span class="label label--before">Antes</span>
+            </div>
+            <div class="before-after__after">
+              <video autoplay loop muted playsinline preload="metadata">
+                <source src="imagnees/interior%20departameneto%20%20despues%20video%20v2.mp4" type="video/mp4" />
+              </video>
+              <span class="label label--after">Después</span>
+            </div>
+            <div class="before-after__divider" aria-hidden="true">
+              <div class="before-after__handle">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M8 5l-5 7 5 7M16 5l5 7-5 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+            <span class="badge-video" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg>Video</span>
+          </div>
+          <div class="proyecto__info">
+            <h3>Acabado Profesional</h3>
+            <p class="proyecto__loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Lima · Interior</p>
+          </div>
+        </article>
+
+        <!-- Proyecto 4: imagen + video -->
+        <article class="proyecto reveal">
+          <div class="before-after" data-slider>
+            <div class="before-after__before">
+              <img src="imagnees/fachada%20antes%20v3.jpeg" alt="Espacio antes del trabajo de JCK Acabados & Pintura" loading="lazy" />
+              <span class="label label--before">Antes</span>
+            </div>
+            <div class="before-after__after">
+              <video autoplay loop muted playsinline preload="metadata">
+                <source src="imagnees/fachada%20video%20despues%20v3.mp4" type="video/mp4" />
+              </video>
+              <span class="label label--after">Después</span>
+            </div>
+            <div class="before-after__divider" aria-hidden="true">
+              <div class="before-after__handle">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M8 5l-5 7 5 7M16 5l5 7-5 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+            <span class="badge-video" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg>Video</span>
+          </div>
+          <div class="proyecto__info">
+            <h3>Cambio Total</h3>
+            <p class="proyecto__loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Lima · Carabayllo</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICIOS ===== -->
+  <section class="section servicios servicios--text" id="servicios">
+    <div class="container">
+      <header class="section-header reveal">
+        <span class="section-label">Nuestros Servicios</span>
+        <h2>Pintamos cualquier espacio con el mismo cuidado</h2>
+        <p>Soluciones a medida para hogares y negocios en Lima Metropolitana.</p>
+      </header>
+
+      <div class="servicios__grid">
+        <article class="servicio reveal">
+          <div class="servicio__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 11.5L12 4l9 7.5"/>
+              <path d="M5 10v10h14V10"/>
+              <path d="M10 20v-6h4v6"/>
+            </svg>
+          </div>
+          <div class="servicio__body">
+            <h3>Pintado de Casas</h3>
+            <p>Interiores y exteriores con acabado fino y duradero.</p>
+          </div>
+        </article>
+
+        <article class="servicio reveal">
+          <div class="servicio__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5" y="3" width="14" height="18" rx="1"/>
+              <path d="M9 7h.01M15 7h.01M9 11h.01M15 11h.01M9 15h.01M15 15h.01"/>
+              <path d="M10 21v-3h4v3"/>
+            </svg>
+          </div>
+          <div class="servicio__body">
+            <h3>Departamentos</h3>
+            <p>Protegemos muebles y entregamos todo limpio y ordenado.</p>
+          </div>
+        </article>
+
+        <article class="servicio reveal">
+          <div class="servicio__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 21h18"/>
+              <path d="M5 21V8l5-3 5 3v13"/>
+              <path d="M15 21V12l4-2v11"/>
+              <path d="M8 11h2M8 15h2M8 19h2"/>
+            </svg>
+          </div>
+          <div class="servicio__body">
+            <h3>Fachadas Exteriores</h3>
+            <p>Pinturas resistentes a sol y humedad, con sellado previo.</p>
+          </div>
+        </article>
+
+        <article class="servicio reveal">
+          <div class="servicio__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l1.5-5h15L21 9"/>
+              <path d="M5 9v11h14V9"/>
+              <path d="M9 14h6v6H9z"/>
+              <path d="M3 9c0 1.5 1.3 3 3 3s3-1.5 3-3M9 9c0 1.5 1.3 3 3 3s3-1.5 3-3M15 9c0 1.5 1.3 3 3 3s3-1.5 3-3"/>
+            </svg>
+          </div>
+          <div class="servicio__body">
+            <h3>Locales Comerciales</h3>
+            <p>Renovamos rapido para que tu negocio no se detenga.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESO ===== -->
+  <section class="section proceso" id="proceso">
+    <div class="container">
+      <header class="section-header reveal">
+        <span class="section-label">Cómo trabajamos</span>
+        <h2>Nuestro proceso en 4 pasos</h2>
+        <p>Simple, transparente y sin sorpresas.</p>
+      </header>
+
+      <ol class="proceso__steps">
+        <li class="proceso__step reveal">
+          <div class="proceso__num">1</div>
+          <h3>Contacto</h3>
+          <p>Escríbenos por WhatsApp y agendamos una visita técnica gratuita.</p>
+        </li>
+        <li class="proceso__step reveal">
+          <div class="proceso__num">2</div>
+          <h3>Presupuesto</h3>
+          <p>Cotización detallada y sin compromiso, en menos de 24 horas.</p>
+        </li>
+        <li class="proceso__step reveal">
+          <div class="proceso__num">3</div>
+          <h3>Ejecución</h3>
+          <p>Trabajo profesional, puntual y limpio. Te mantenemos informado a cada paso.</p>
+        </li>
+        <li class="proceso__step reveal">
+          <div class="proceso__num">4</div>
+          <h3>Garantía</h3>
+          <p>Inspección final junto a ti y garantía escrita del trabajo entregado.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== FORMULARIO ===== -->
+  <section class="section cotizar" id="cotizar">
+    <div class="container cotizar__inner">
+      <div class="cotizar__text reveal">
+        <span class="section-label">Solicita tu cotización</span>
+        <h2>Cuéntanos sobre tu proyecto</h2>
+        <p>Completa el formulario y te respondemos por WhatsApp en menos de 1 hora hábil. Visita técnica y cotización <strong>100% gratis</strong>.</p>
+
+        <ul class="cotizar__list">
+          <li><span class="check-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Sin compromiso</li>
+          <li><span class="check-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Respuesta rápida</li>
+          <li><span class="check-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Asesoría de colores incluida</li>
+          <li><span class="check-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Atendemos toda Lima Metropolitana</li>
+        </ul>
+      </div>
+
+      <form class="cotizar__form reveal" id="formCotizacion" novalidate>
+        <div class="form-group">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej. Jose Torres" required />
+        </div>
+
+        <div class="form-group">
+          <label for="telefono">Teléfono / WhatsApp</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="Ej. 987 654 321" required />
+        </div>
+
+        <div class="form-group">
+          <label for="tipo">Tipo de trabajo</label>
+          <select id="tipo" name="tipo" required>
+            <option value="">Selecciona una opción</option>
+            <option>Pintado de casa</option>
+            <option>Pintado de departamento</option>
+            <option>Pintado de fachada</option>
+            <option>Local comercial</option>
+            <option>Otro</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="ubicacion">Distrito / Ubicación</label>
+          <input type="text" id="ubicacion" name="ubicacion" placeholder="Ej. Surco, La Molina, Miraflores" required />
+        </div>
+
+        <div class="form-group form-group--full">
+          <label for="mensaje">Mensaje (opcional)</label>
+          <textarea id="mensaje" name="mensaje" rows="3" placeholder="Cuéntanos brevemente sobre el proyecto..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--lg btn--block">
+          <svg class="icon-whatsapp" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.123 1.532 5.855L.054 23.203a.75.75 0 0 0 .916.916l5.348-1.478A11.955 11.955 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.956 0-3.792-.535-5.364-1.463l-.385-.228-3.992 1.102 1.103-3.992-.229-.385A9.956 9.956 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          Enviar y abrir WhatsApp
+        </button>
+        <p class="form-note">Al enviar, abriremos WhatsApp con tu mensaje listo para confirmar.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section section--alt faq" id="faq">
+    <div class="container faq__inner">
+      <header class="section-header reveal">
+        <span class="section-label">Preguntas Frecuentes</span>
+        <h2>Resolvemos tus dudas</h2>
+      </header>
+
+      <div class="faq__list">
+        <details class="faq__item reveal">
+          <summary>¿Cómo solicito una cotización?</summary>
+          <p>Escríbenos por WhatsApp o llena el formulario. Hacemos visita técnica gratuita para evaluar tu proyecto y enviarte un presupuesto en menos de 24 horas.</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary>¿Cuánto tarda un trabajo?</summary>
+          <p>Depende del tamaño. Una casa estándar toma entre 3 y 5 días. La fecha exacta queda definida en la cotización.</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary>¿Dan garantía?</summary>
+          <p>Sí, todos nuestros trabajos incluyen garantía escrita. Si algo no queda como acordamos, lo corregimos sin costo.</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary>¿En qué zonas trabajan?</summary>
+          <p>Atendemos toda Lima Metropolitana. Para otras zonas, consulta disponibilidad por WhatsApp.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA FINAL ===== -->
+  <section class="cta-final">
+    <div class="container cta-final__inner">
+      <h2>¿Listo para transformar tu espacio?</h2>
+      <p>Contáctanos hoy y recibe tu cotización gratuita en minutos.</p>
+
+      <div class="cta-final__btns">
+        <a href="https://wa.me/51966799756?text=Hola%20JCK%20Acabados%20%26%20Pintura%2C%20quisiera%20solicitar%20una%20cotización" class="btn btn--primary btn--lg" target="_blank" rel="noopener">
+          <svg class="icon-whatsapp" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.123 1.532 5.855L.054 23.203a.75.75 0 0 0 .916.916l5.348-1.478A11.955 11.955 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.956 0-3.792-.535-5.364-1.463l-.385-.228-3.992 1.102 1.103-3.992-.229-.385A9.956 9.956 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          WhatsApp
+        </a>
+        <a href="tel:+51966799756" class="btn btn--white btn--lg">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="20" height="20"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.24 1z"/></svg>
+          Llamar ahora
+        </a>
+        <a href="mailto:santiago_jck@hotmail.com?subject=Cotización%20JCK%20Acabados%20%26%20Pintura" class="btn btn--white btn--lg">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="20" height="20"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg>
+          Email
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <p class="footer__brand">JCK <span>Acabados &amp; Pintura</span></p>
+        <p class="footer__tag">Servicio profesional de pintado en Lima Metropolitana.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <ul class="footer__contact">
+          <li><a href="https://wa.me/51966799756" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.123 1.532 5.855L.054 23.203a.75.75 0 0 0 .916.916l5.348-1.478A11.955 11.955 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.956 0-3.792-.535-5.364-1.463l-.385-.228-3.992 1.102 1.103-3.992-.229-.385A9.956 9.956 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            +51 966 799 756
+          </a></li>
+          <li><a href="tel:+51966799756">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +51 966 799 756
+          </a></li>
+          <li><a href="mailto:santiago_jck@hotmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg>
+            santiago_jck@hotmail.com
+          </a></li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Lima, Perú
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#servicios">Casas</a></li>
+          <li><a href="#servicios">Departamentos</a></li>
+          <li><a href="#servicios">Fachadas</a></li>
+          <li><a href="#servicios">Locales comerciales</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li></li>
+          <li><a href="#cotizar">Cotizar</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 JCK Acabados & Pintura. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ===== STICKY MOBILE CTA ===== -->
+  <div class="mobile-cta" aria-label="Acciones rápidas">
+    <a href="tel:+51966799756" class="mobile-cta__btn mobile-cta__btn--call">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.24 1z"/></svg>
+      Llamar
+    </a>
+    <a href="https://wa.me/51966799756?text=Hola%20JCK%20Acabados%20%26%20Pintura%2C%20quisiera%20solicitar%20una%20cotización" target="_blank" rel="noopener" class="mobile-cta__btn mobile-cta__btn--wa">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.123 1.532 5.855L.054 23.203a.75.75 0 0 0 .916.916l5.348-1.478A11.955 11.955 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.956 0-3.792-.535-5.364-1.463l-.385-.228-3.992 1.102 1.103-3.992-.229-.385A9.956 9.956 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
+
